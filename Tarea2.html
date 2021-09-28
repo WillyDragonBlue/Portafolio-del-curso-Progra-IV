@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+</head>
+<body>
+    <form action="">
+        <h1>Tarea 2 Formulario </h1>
+        <!-- Crear un formulario en HTML5 para que una persona agregue sus datos personales -->
+       
+        <p>
+            <b>Nombre:</b>
+            <input type="text" name="nombre" value=""/>
+        </p>
+        <p>
+            Primer apellido:
+            <input type="text" name="ap1" value=""/>
+        </p>
+        <p>
+            Segundo apellido:
+            <input type="text" name="ap2" value=""/>
+        </p>
+        <p>
+            <b>Fecha de nacimiento:</b>
+            <input type="date" name="fnac" value=""/>
+        </p>
+
+    <p><b>Genero:</b>
+
+        <div>
+          <input type="radio" id="fem" name="gen" value="fem">
+          <label for="fem">Femenino</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="masc" name="gen" value="masc">
+          <label for="masc">Masculino</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="nobin" name="gen" value="nobin">
+          <label for="nobin">No Binario</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="prot" name="gen" value="prot">
+          <label for="prot">Protogen</label>
+        </div>
+        
+        <div>
+          <input type="radio" id="otro" name="gen" value="otro">
+          <label for="otro">Otro</label> 
+          <input type="text" value=""/>
+        </div>
+    </p>
+
+    <p><b>Estado Civil:</b>
+
+        <div>
+            <input type="checkbox" id="Soltero" name="estciv" value="Soltero">
+            <label for="Soltero">Soltero</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Casado" name="estciv" value="Casado">
+            <label for="Casado">Casado</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Comprometido" name="estciv" value="Comprometido">
+            <label for="Comprometido">Comprometido</label>
+        </div>
+
+    </p>
+
+    <p>
+        <b>Correo Electronico:</b>
+        <input type="email" name="email" placeholder="sudireccion@gmail.com"/>
+    </p>
+
+    <p>
+        <b>Numero de Telefono:</b>
+        <input type="tel" name="telefono" placeholder="(+506)____-____"/>
+    </p>
+
+    <p>
+        <b>Años experiencia:</b>
+        <input type="number" min="0" max="50"/>
+    </p>
+
+    <p><b>Educacion</b>
+        <fieldset>
+            <legend>Elija sus titulos ganados</legend>
+              <div>
+                <input type="checkbox" id="Primaria" name="titulos" value="Primaria">
+                <label for="Primaria">Primaria</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Secundaria" name="titulos" value="Secundaria">
+                <label for="Secundaria">Secundaria</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Tecnico" name="titulos" value="Tecnico">
+                <label for="Tecnico">Tecnico</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Terciaria" name="titulos" value="Terciaria">
+                <label for="Terciaria">Colegio Universitario</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Diplomado" name="titulos" value="Diplomado">
+                <label for="Diplomado">Diplomado</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Bachillerato" name="titulos" value="Bachillerato">
+                <label for="Bachillerato">Bachillerato</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Licenciatura" name="titulos" value="Licenciatura">
+                <label for="Licenciatura">Licenciatura</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Maestria" name="titulos" value="Maestria">
+                <label for="Maestria">Maestria</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Maestria" name="titulos" value="Maestria">
+                <label for="Maestria">Maestria</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Doctorado" name="titulos" value="Doctorado">
+                <label for="Doctorado">Doctorado</label>
+              </div>
+              <div>
+                <input type="checkbox" id="PostD" name="titulos" value="PostD">
+                <label for="PostD">Estudios Post Doctorales</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Posgrado" name="titulos" value="Posgrado">
+                <label for="Posgrado">Posgrado</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" id="otros" name="titulos" value="other">
+                <label for="otros">Otros</label>
+                <input type="text" id="otherValue" name="other">
+              </div>
+
+            </fieldset>
+
+    </p>
+
+     <p>
+        <b>Descripcion personal:</b>
+        <p>
+            <textarea name="Descripcion" 
+            cols="30"
+            rows="5"
+            placeholder="Puede compartir una breve descripcion personal"
+            ></textarea> 
+        </p>
+    </p>
+
+    <p>
+        <p>
+            <b>Direccion:</b>
+        </p>
+        Provincia: 
+        <input list="Provincia" name="Provincia"/>
+            <datalist id="Provincia">
+            <option value="San Jose">
+            <option value="Alajuela">
+            <option value="Cartago">
+            <option value="Guanacaste">
+            <option value="Heredia">
+            <option value="Puntarenas">
+          </datalist>
+        <p>
+            Canton: 
+            <select name="Provincia" id="Canton">
+                <Option value="1"> Central </Option>
+                <Option value="2"> Oriental </Option>
+                <Option value="3"> Occidental </Option>
+            </select>
+        </p>
+
+        <p>
+            <b>Contraseña:</b>
+        <input type="password" placeholder="Password" id="password" required>
+        <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+        </p>
+
+        <p>
+            <b>Contacto:</b>
+        </p>
+        <p>
+            Semana en la que puede ser contactado:
+            <input type="week"/>
+        </p>
+        <p>
+            Horario en el que puede ser contactado:
+            <input type="time"/>
+        </p>
+        <p>
+            Dias de preaviso que tendria que dar:
+            <!-- <input type="range" name="preaviso" min="0" max="30" class="slider"/> -->
+            <div class="slidecontainer">
+                <input type="range" min="0" max="30" value="1" class="slider" id="preaviso" alt="Dias con antelacion">
+                <span id="dias"></span>
+              </div>
+              
+              <script>
+              var slider = document.getElementById("preaviso");
+              var output = document.getElementById("dias");
+              output.innerHTML = slider.value;
+              
+              slider.oninput = function() {
+                output.innerHTML = this.value;
+              }
+              </script>
+        </p>
+
+    </p>
+
+    
+        <br>
+        <p>
+            <b>Enviar Formulario:</b> 
+        <input type="image" src="dragmad.png" alt="Enviar Formulario" onmouseover="this.src='shock.gif'" onclick="value='enviar'"/>   
+
+    </form>
+</body>
+</html>
